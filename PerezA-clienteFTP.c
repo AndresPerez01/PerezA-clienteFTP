@@ -1,7 +1,7 @@
 /*
- * COMPILAR: gcc -o ftpclient ftpclient.c connectsock.c connectTCP.c errexit.c -lpthread
- * USO: ./ftpclient <servidor> [puerto]
- * EJEMPLO: ./ftpclient localhost 21
+ * COMPILAR: gcc -o PerezA-clienteFTP PerezA-clienteFTP.c connectsock.c connectTCP.c errexit.c -lpthread
+ * USO: ./PerezA-clienteFTP localhost 21 <servidor> [puerto]
+ * EJEMPLO: ./PerezA-clienteFTP localhost 21 localhost 21
  * PD: En permisos de escritura en cualquier servidor si se generan errores, usar chmod 755 y 775 en el servidor, por si las dudas.
  */
 
@@ -453,4 +453,5 @@ int main(int argc, char *argv[]) {
     close(control_sock);
     printf("[OK] Desconectado\n");
     return 0;
+
 }
